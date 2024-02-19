@@ -1,0 +1,129 @@
+Baby Elephant
+Human Skull
+Maasai Headdress
+
+Foghorn
+Window from Coit Tower
+Top of the Transamerica Pyramid
+
+
+Gate of Heavenly Peace
+Stone from the Great Wall
+Hall of Good Harvest
+
+Sistine Chapel Ceiling
+Coins from the Trevi Fountain
+
+Cathedral Dome
+Cannonball from the Emperor's Cannon
+Bolshoi Ballet Slipper
+
+
+
+
+#############
+Floor Key
+
+
+Number of artifacts to return
+Computersanity
+City Shuffle
+
+
+Remove the trivia questions
+Number of artifacts to summon Koopalings?
+
+
+Idea to use the Globulator to warp between cities and remove Yoshi pipes?
+Add a save feature and remove passwords
+Prevent losing artifacts/city was not secured when leaving
+
+1520- Yoshis
+154E- Keys
+154F- Artifacts
+1550- Item Recieved
+1551- Item queue
+1553- Current Check
+1554- Death Sent
+1555- Artifacts/checks list
+1563- Info Kiosks (3 bits for saved, 3 for photograph)
+1540- Floors Cleared
+1543- Game Cleared
+1544- Game Started
+1530- Photo Booth Setup
+1531,32,33- Photo Booth ID values
+
+1540- Floor 1 Unlocked
+1541- Floor 2 Unlocked
+1543- Goal Cleared
+1544: Question Debugger
+1545- Validation Check
+1546- Validation 2
+1547- Stored City (for computer)
+1548- Skip Menu Palette (for computer)
+1549- Checkmark calculations
+154A- 
+154B- Get Quiz Question
+154E- Floor keys
+154F- Artifacts Returned
+
+
+0502- City
+0504- Floor
+8006A9- Boss Status (E for fight, 0 dead, D waiting)
+050A- Artifacts
+0508- Selected Artifact
+0567- Angry lady timer- Use for Deathlink
+056F- Doors Status
+80EC92- Determine Boss Spawn
+0E49- 
+058D- Koopa Loot tracker
+
+819FB6- City securation. Used to determine if the door closes and presumably the floor con
+80CEC8- City secured Screen
+81A4B7- Check to enter photobooths
+
+1FFF10- Required Artifacts
+1FFF11- Deathlink
+
+
+
+
+
+00- Rome
+01- Paris
+02- London
+03- New York
+04- San Francisco
+05- Athens
+06- Sydney
+07- Tokyo
+08- Nairobi
+09- Rio De Janeiro
+0A- Cairo
+0B- Moscow
+0C- Beijing
+0D- Buenos Aires
+0E- Mexico City
+
+
+Progressive Floor Key
+
+Officer
+Scientist
+Tourist
+Businesswoman
+Newspaper
+Kid
+
+$
+
+Option to randomize map/Globulator?
+
+80A558- Initialize Textbox, Y= 0000, X = A1D7, A = 0080
+80A59C- Load text to write
+80A5B9- Display Textbox
+
+$809203- Play SFX, Y = Sound ID
+$027ACD (rom): Score Number GFX
+$003AF6 (rom): Computer icon picture position

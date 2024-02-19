@@ -1,0 +1,83 @@
+00: Moonside Hotel
+01: Saturn Hotel
+02: Fourside Hotel
+03: Monotoli Building, outside elevator
+04: Monotoli Building, outside elevator 2F
+05: Monotoli Building, outside right elevator 2F
+06: Monotoli Building, outside elevator 3F
+07: Moonside Hotel
+08: Moonside Hospital, screen shift transition
+09: Moonside invisible man room, screen shift 
+0A: Ness's Bedroom
+0B: Onett Hotel
+0C: Scaraba Bazaar
+0D: Scaraba Hotel
+0E: Summers Hotel
+0F: Ghost Tunnel, Threed West Exit
+10: Ghost Tunnel, Threed East Exit
+11: Threed Hotel
+12: Ghost Tunnel, Twoson Side
+13: Twoson Hotel
+14: Center of Fourside
+15: Peaceful Rest Valley, near cabin
+16: Tenda Village
+17: Magicant
+18: Moonside, by museum
+19: Onett, near Ness's house
+1A: Cave of the Past
+1B: Dalaam
+1C: Threed near tent
+1D: Twoson near bike shop
+1E: Winters near boarding school
+1F: Summers near truck
+20: Scaraba south of bazaar
+21: Lost Underworld
+22: Paula's House
+23: Memory House, slow white fade
+24: Memory House main room
+25: Memory House Hall
+26: Memory House Ness's Room
+27: Happy Happy Hotel
+28: Magicant from Sea of Eden
+29: Lumine Hall, near exit
+2A: Diamond Mine, stuck in wall
+2B: Dusty Dunes Drugstore
+2C: Dusty Dunes Miner Shack
+2D: Winters North Tent
+2E: Winters South Tent
+2F: Winters outside South Dungeon
+30: Saturn Valley Hotel
+31: Deep Darkness Monkey Hotel
+32: Tenda Village hotel
+33: Dalaam throne
+34: Magicant, by mom
+35: Magicant Hotel
+36: Underworld Hotel
+37: Dungeon Man Bench 1
+38: Dungeon Man Bench 2
+39: Dungeon Man Bench 3
+3A: Dungeon Man Bench 4
+3B: Lost Underworld Entrance
+3C: Twoson Tunnel
+3D: Outside Twoson Tunnel
+3E: Threed West Tunnel
+3F: Threed, outside West Tunnel
+40: Onett town hall desk room
+41: Chaos Theater backroom
+42: Snow Wood, Jeff's room
+43: Onett Police Station hallway
+44: Onett Police Station backroom
+45: Threed, outside East Tunnel
+46: Threed East Tunnel
+47: Desert West Tunnel
+4E: Summers South Beach
+4F: Dalaam Throne
+45: Threed, outside east tunnel
+50: Fourside Dept. Store
+51: Lilliput steps, out of bounds
+52: Moonside, south of Monotoli
+60: Threed, Graveyard
+61: Threed, by zombies
+A1: Magicant Entrance
+AA: Fourside Museum
+EE: Fourside, CRASH

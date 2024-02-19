@@ -1,0 +1,236 @@
+$7E2340: ! Switch
+$7E2341: Dashed Platform
+$7E2342: Dashed Stairs
+$7E2343: Beanstalk
+$7E2344: Helicopter
+$7E2345: Mole Tank
+$7E2346: Train
+$7E2347: Car
+$7E2348: Submarine
+$7E2349: Spring Ball
+$7E234A: Large Spring Ball
+$7E234B: Arrow Wheel
+$7E234C: Vanishing Arrow Wheel
+$7E234D: Watermelon
+$7E234E: Ice Melon
+$7E234F: Fire Melon
+$7E2350: Super Star
+$7E2351: Flashing Egg
+$7E2352: Giant Egg
+$7E2353: Egg Launcher
+$7E2354: Egg Plant
+$7E2355: Chomp Rock
+$7E2356: Poochy
+$7E2357: Platform Ghost
+$7E2358: Skis
+$7E2359: Key
+$7E235A: Middle Ring
+$7E235B: Bucket
+$7E235C: Tulip
+$7E235D: Egg Capacity Upgrades
+$7E235F: Max Eggs
+$00CC: Keys in Egg Inventory
+$7E2360: World Gates
+$0DFC83: Starting World
+$7E2361: Extra Panels
+$7E2362: Bonus Panels
+$7E2363: Exit State
+$0DFC84: Hidden Object Visibility
+$0DFC83: Starting World
+$0DFC85: Bosses for 6-8 Unlock
+$0DFC86: Bosses for 6-8 Clear
+$0DFC87: Autoscroll Disabled
+$0DFC88: Middle Ring
+$0DFC89: Lives High
+$0DFC8A: Lives Low
+$0DFC8B: Bonus Game Checks
+$0DFC8C: Deathlink flag
+$7E2364: Secret Lens
+$7E2365: Item Queue High
+$7E2366: Item Queue Low
+$7E2367: Current Item
+$7E2368: Fuzzy Trap Active
+$7E2369: Fuzzy Trap Timer
+$7E236B: Dark Trap Enabled
+$7E236C: Dark Trap Timer
+$7E236D: Level Checks
+	Bit 1: Red Coins
+	Bit 2: Flowers
+	Bit 4: Stars
+	Bit 8: Level Clear
+	BIT 10: Bandit Game
+	BIT #$20: Boss Clear
+$7E23B1: End of level checks
+$7E23B2: Bosses Defeated
+$7E14B3: Number of Luigi Pieces
+$0049: Ski Door State
+$004C: Worlds to Unlock (Level)
+$00CE: Worlds to Unlock (OW)
+$00CF: Extras to Unlock
+$00DA: Reset Timer
+$00DB: Reset Flag
+$00DC: Boss fought
+$00DD: Keys Word
+$00DF: World Index
+$0DFC8D: Boss List
+$0DFC8E: Pieces Required
+$0DFC8F: Goal Mode
+$026A: Deathlink Received
+$B414: Luigi Pieces
+$B415: Goal Flag
+
+7E80: File 1
+7F00: File 2
+7F80: File 3
+
+
+
+
+TODO:
+For Bubble Trap, form needs to be 0.
+LDA $60AE
+ORA 6162
+ORA 6168
+If not 0, don't set off the bubble trap
+
+
+Write random bytes to $01BF2C (Bonus games per world)
+01C288 should be 00, 8B should be 80
+If you've completed a check, should it be yellow on the normal menu even on replays?
+
+Add Secret Lens and default hidden visibility X
+Idea for setting: Disable Autoscroll: Prevent $0C1E and $0C20 from being written to
+World Keys/Keysanity (Save whether a door has been locked or unlocked. Turn individual keys into checks. Keep a counter of keys per world.)
+
+
+$07F328: Disable Ice melon baron hit detection
+$02A36B: Determine if the door you're opening is a locked one
+$0212: Current Bonus Game
+Setting to add Secret Lens
+
+$0218: Current World (Needs to be changed when itializing the starting world)
+
+$02941F: Should be 80 (middle ring tutorial)
+$179953: Should be 1E to skip tutorial
+
+
+Item SFX:
+World Gate: 93
+Major Items: 43
+01B003: Write starting position
+
+I can make a table after the checks that represents bosses defeated.
+
+On Overworld Loop
+LDA FIleNum
+ASL
+LDA Address,X
+MVN 7E70
+
+Option Ideas:
+Menu colors
+
+
+6-8 condition can be done immediately after the Gate unlock code.
+
+Current Priorities:
+Better Flip Cards
+Extra 6 not clearing on reset? Hypothesis: Caused by 6-8's exit level being too high
+Unset the fuzzy flag when the timer runs out for the trap
+
+
+PAUSE MENU TEXT:
+
+Spring Ball: 2402
+
+01D035: Star Amount
+01D0DE: Coin Amount
+01D17A: Flower Amount
+
+AP Priorities:
+ Shuffle Music
+ Secrets
+ Keysanity
+Random Level Colors
+Random Level Music
+
+Glitches expected in Glitched Logic:
+1-1 Warps
+Red Coin Duplication
+Gatehacks
+
+Exclude death link during yoshi mode: 16, 0A
+
+Castle Mode:
+Manual
+1
+2
+3
+4
+Gauntlet
+
+Boss Shuffle:
+Disabled
+Shuffled
+Randomized
+Singularity
+
+Egg Control Trap
+
+
+FUTURE SETTING:
+Keysanity
+Enable Secrets
+1-up Cloudsanity
+Oh-KO Trap
+Mint Breath Trap
+Indigestion Trap
+Censorship Trap
+Ice Trap
+
+Secrets Enabled:
+None
+Random
+Choice
+
+Number of Secrets:
+1-6 
+
+
+
+Current Stuff:
+BG Colors
+Foreground Colors
+Secrets
+
+
+17F471: Level Start Data:
+0- room ID
+1: X Pos
+
+
+If level is SECRET 1 at
+01B15F:
+LDA $0101
+STA $6094
+
+TRAP IDEAS:
+Bubble trap
+Ice/Terrain Trap
+Censor Trap
+Indigestion Trap
+OH-KO Trap
+Pogo trap?
+Gravity Trap
+
+$045A10: Level Panel GFX
+$0BDBAF: Level Panel Table
+$0BDC55: Level Panel Palettes
+0DD98F: 60 to disable bowser ending.
+$101106: Flip Cards layout. 0-A are valid tiles. A is kamek
+$10A65F: Flip cards possible layouts
+$10A695: Flip card Layout RNG
+
+For Censor Trap:
+Enable the Mosaic timer (I found it but forgot)
+Popup a textbox with the ID corresponding to OH MY (forgot)

@@ -1,0 +1,332 @@
+$C18C22: Add Item routine (A: Character slot, X: Item ID)
+$C18BC6: Add item long routine?
+$C1569E: Initialize adding item?
+$C1937F: load enemy name
+$03E258 (Crom): Textbox Width/height/position
+$12: Dynamic name pointer
+$C17D2: First load $1E7C: [Character] got item
+$C17D2: Second load: [Item name]
+$C17D2: Third load: Character name]
+$1E44: Item obtained
+$D56DDC: Item Names
+$99F1: Inventory
+$9A50: Paula Inventory
+$C1569E: Get Item
+$00F8D0: Spare ROM
+$986F: Character Order
+$986E: Escargo Express Last Slot
+$F680: Item Received
+$F681: Character the item is sent to
+$00A60B: Opened present sprite?
+$C142A4: Sets Event Flags
+$7E87FA: Cursor Position (teleport menu)
+$C11E1C: Determine Teleport
+Adding a dusty dunes teleport should be... not the worst? $C11E1C is an LDA that needs to = 0x0E.
+$C0D6A4: Init Battle
+$C0D666: Determine Swirl Type
+$C0D629: Can disable encounters here
+$7E9840: Skip Sandwich Flag
+$C2165E: Set Flag
+$C1B80E: Get PP cost
+$D7BB70: Map teleport flags
+$C4D6AA: Map Availability
+$D5F710: Freespace
+C802E6: Bike shop text. You should be able to return the item he gives you
+$cf61e9: NPC Sector Table
+$C48037: Lumine text
+$CF8985: Object Table
+$C81D7A: More text
+$CF0000: Door Table
+$D5EBAB Teleport table
+$C68931 Photo for tenda
+$C400D4: Script table
+$7E5E3C: Active Hotspots
+
+$B4A0: Selected File
+
+$C1EF9E: Spawn position X
+(B41F for Onett North)
+$C1EF9B: Spawn Position Y
+(5604 for North Onett)
+
+
+$D578BA: Teleport Coordinates X/Y. Text is also around here.
+$D578B8: Teleport Flag
+$001B86: Ness Name
+D56a5b: Temporary Goods
+
+$306A30: AP Sram (File 2 data)
+
+
+7EF680: Item Received
+7EF681: Character that got item
+7EF682: Teleport/character recieved
+7EF683: Flag that an Archipelago Item was found
+7EF685: Melody counter
+7EF686: Item Queue
+7EFFB0: 16 bytes dedicated to get a player name from the client.
+7EFFC0: 48 bytes dedicated to item name
+
+
+Options:
+Kidsanity
+Starting Character
+Warpsanity
+Starting Town
+Traps (Mashroomized, etc.)
+Goal: Giygas, Magicant, 1/128 (Sword of Kings) hunt
+
+
+TODO:
+Shopsanity
+Charactersanity
+Add AP items for warps, phone numbers, and characters
+Shuffle character names?
+need to figure out the DD character
+Change default phone spawns
+Remove changed sprite IDs
+two in onett and ending poo, jeff
+Check AP character slots
+Set flag 10 on poo join (Poo Starting item flag)
+Maybe fix the threed NPC text?
+I think somewhere I did the incorretc check for alive/presnent party members...
+NO ITS THE LEADER CHECK! 191001 1b04
+Double check tenda tea
+Fix 1C02FF at Stonehenge and Moonside item?
+New item names and descs
+Add item for starstorm
+Add item for flyin man
+Make the game load ap data
+zero out ap data on new files
+spawn coordinates
+Put Sound Stone in start inventory
+give Ness some equipment to start with (Tee Ball Bat and Cheap Bracelet)
+First 12 starting items get written to Ness's inventory. Then storage after that. Then handled by the server
+
+CUSTOM TEXT AT FE9210
+
+
+
+ONETT TODO:
+Change Library Lady text X
+Change the North Onett police blockade to be visible with police brutality flag X
+Change Buzz Buzz text X
+Change Lier text X
+Change frank text to mention pirkle's item
+Make police visible from start X
+Add police badge + change strong text X
+Prevent police from appearing at giant step X
+Remove NPCS from onett
+Make the shyness book not tied to flag 7E
+
+TWOSON:
+Make apple kid immediately at burglin after paying him
+Remove the pencil eraser walk back sequence and the phone call
+Have the mouse just give you an item
+Change everdred text to maybe reference the wad of bills and paula?
+Figure out what to do about the HH bridge
+Runaway five should always be ready to trigger without the show X
+Debt should be paid from the front of the counter
+Change the runaway guys to not give the backstage pass
+Always make the Chaos Theater open (Unless the Runaway Five were freed there?)
+Threed bus thing
+
+HAPPY HAPPY:
+prevent church from locking
+let donation lady always ask for donation
+have cabin prisoner always give their item even if you free them first
+Fix the local guy breaking the game
+Lilliput sanctuary activation
+
+THREED:
+Prevent the zombies from spawning the hooker X
+Change zombie text if belch is defeated
+Prevent the jeff sequence from starting X
+Lock the door from the other side and require bad key X
+Set a character in the basement X
+Set the sky rambler to need jeff + ufo engine X
+Boogie tent needs to check for Jeff in the party X
+Stop the zombie paper call
+Check Zombie Paper/tent event for removing Fourside warp
+
+SATURN VALLEY: 
+Add ghosts saying the tunnels are cleared
+Add check to the Tea
+Add Star Master to CotP
+Make the Andonuts crew appear by default
+Make the Fly Honey the password
+
+DUSTY DUNES:
+Add the mine guy outside the mine X
+have the first mine guy check for Mining Permit X
+Disable traffic jam X
+Prevent going to threed X
+Talah rama open with an item (probably king banana but maybe invite) X
+Disable monkey from teleporting and add PSI check X
+
+FOURSIDE:
+Always enable the Moonside warp X
+Allow moonside to be taken froom Moonside X
+Add the maid X
+Fix the clumsy robot flag X
+Have the runaway five be triggered by the Topolla diamond X
+stop the guy from spawning on the bridge X
+Change the default music X
+Jeff triggers the darkness in the Dept. store. Breaker box X
+Disable Threed bus
+Magnet Hill X
+
+WINTERS:
+add a Tony to the gate that checks for letter from tony to let you in X
+Properly add a check for Maxwell X
+Make the locker open the lockers X
+Get rid of bubble monkey in the store X
+Add a brickroad check for if you clear his dungeon X
+Get rid of the sky runner X
+Always have the mouse ready for the check X
+Add tony for Shyness check in stonehenge (Twony) X
+Add a character check to the Snow Wood Bed X
+
+SUMMERS:
+Enable kraken boat by default X
+Enable magic cake lady by default X
+have magic cake give a PSI check X
+Add specific party text for boat guy X
+Remove tony phone X
+
+SCARABA:
+Add NPCs to cross the river X
+Add a starmaster that gives you a PSI check X
+Remove northern dungeon man and lock southern dungeon man X
+Make the pyramid open with the hieroglyph X
+Fix Pyramid music X
+
+DALAAM:
+Add the sanctuary X
+Poo's master? X
+Poo training should check for poo X
+Character on the throne X
+
+
+MAGICANT TODO:
+remove flying men
+ness nightmare should warp the player to player start
+Ness nightmare should be goal or give stat boost to all characters or check
+
+UNDERWORLD TODO:
+Tendakraut check
+Fire Springs
+
+DEEP DARKNESS:
+Add a character behind Master Barf
+Fix Barf ending script
+
+TENDA VILLAGE:
+Set the destination to be inside the cave X
+allow teleporting from the cave X
+add a tenda to check the Hawkeye X
+Prevent the leader from asking your name X
+stop the rock from stopping you X
+Add a check to tea X
+remove the Apple Kid phone call X
+Implement Lumine Hall Sanctuary X
+
+General TODO:
+add poo PSI item
+Sanctuary bullshit
+set phone spawn to player spawn
+Change item names to new items
+Add new item descriptions
+
+FE9210: Onett Teleport
+FE9240: Twoson Teleport
+FE9271: Happy-Happy Teleport
+FE92AF: Threed
+FE92E0: Saturn Valley
+FE9318: Desert
+FE9355: Fourside
+FE9388: Winters
+FE93BA: Summers
+FE93EC: Scaraba
+FE941E: Dalaam
+FE944F: Deep Darkness
+FE948B: Tenda Village
+FE94C3: Lost Underworld
+FE9501: Magicant
+FE9534: Nothing
+FE9554: PSI Starstorm
+FE9618: Got Item
+FE023C: Absorbed the power of earth
+FE0267: You win text
+FE0000: Sanctuary redirect
+D5F710: Paula join text
+D5F75D: Poo join text
+C884D0: Jeff join text
+C8855B: Flying Man join text
+C8858A: Teddy Bear join text
+C75C33: Super Bear text
+C75D13: AP Item text
+FE0020: Pocket Storage
+C4FE40: Number of Sancs for Giygas
+C4FE41: Sancs for Magicant
+C4FE42: Sancs for Win
+
+D103: Starstorm alpha learned
+D203: Mani-Mani interacted with
+D303: Sanctuary goal reached
+D403: Sanctuary Magicant teleport
+D503: Sanctuary Ending
+D603: Absorbed Land Power
+D703: Tenda Leader Check
+D803: Submarine Used
+DA03: Tenda Tea Check
+D903: Post-Pyramid check
+7D02: Dalaam Character
+DB03: Kraken Defeated
+3D00: Magic Cake check
+DC03: Snow Wood opened
+5D02: maxwell item
+8000: Winters Char
+DD03: Got Shyness Book
+DE03: Stupid photo
+8B00: Dept. Store Spook defeated
+4B00: Mani-Mani defeated
+DF03: Got moonside item
+E502: Monotoli Check
+9802: Monotoli Character
+	7601: Belch Base Cleared
+
+PSI CHECK POINTERS
+C5F220 - Buzz Buzz
+C5F23D - Mani Mani
+ - Saturn Star Master
+ -Saturn Coffee
+C951E4 - Monkey
+FE0504 - Department Store
+C920C6 - Magic Cake
+C92992 - Trial of Mu
+C5744E - Scaraba Master
+FE95E7 - Tenda Tea
+ - Talking Rock
+ - Ness's Nightmare
+
+ CHARACTER POINTERS
+ CFA977 - Threed Character Sprite (CFA97A for movement pointer)
+ FE0220- Threed Character Text
+ CFB0D6- Winters Character Sprite (0800 for stationary)
+ FE970D- Winters Character Text
+ CFD20A- Dalaam Character Sprite
+ 6101A8- Dalaam Character Text (If need be, I can attach the true conditions, 1B03/2 with the character pointer...)
+ CFC37F- Fourside Character Sprite
+ C6EE71- Fourside Character Text
+ 
+ (6201 for ap item sprites. down for normal, left for progression, up for checked
+ 
+ 
+ 0100- Tenda village
+ 0200- Bad Key Door
+ 0300- Scaraba Rocks
+ 0400- Desert Tunnel
+ 0500- Fourside Breaker Box
+ 0600- Topolla Venus
+ 0700- Topolla Bus

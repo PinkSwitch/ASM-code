@@ -1,0 +1,83 @@
+C75F73- Tracy Present
+C76112- Tracy Gift
+C71CAD- Pyramid pedestal item
+C73F0F- Baseball house item
+C73FE9- Baseball house item
+C7472F- Entertainer Gift
+C81318- Orange Kid Investment
+C812D1- Orange Kid
+C812E6- Orange Kid
+C94E44- Insignificant Check
+C948DC- Runaway Five Paula
+C81F56- Apple Kid Twoson invention
+EF95A3- Paula Gift
+C69861- Saturn horn of life
+C624F5- Monkey caves Flame Pendant chest
+C62578- King Banana monkey
+C6DD1D- Fourside Bakery 2F
+C85A11- Pyramid pedestal item
+C860B9- Pyramid pedestal item
+C9E567- Monkey's Love check
+C9E81C (Magic truffles but its all the same so i cant call it)
+C9D7E2- Shy Tenda Gift
+C9D95E- Tendakraut
+EF58C7- Broken Phase Distorter
+C87280- Pyramid Pedestal
+C9AF16- Pyramid Pedestal
+Frank talking about Key to the Shack
+Guy in Scaraba talking about Key to the Tower
+Desert Guy talking about the Diamond
+The library saying the item
+Shyness book bookshelf
+The Mr. Saturn belch gifts
+ 
+ 1000 dollars
+ 5 dollars
+ 50 dollars
+ 10 dollars
+ 
+ 
+ 
+ 
+ 
+ 
+ Onett: Drugstore Right
+ Onett: Drugstore Left
+ Onett: Burger Shop
+ Onett: Bakery
+ Twoson: Burger Shop
+ Twoson: Bakery
+ Twoson: Dept. Store 3F Left
+ Twoson: Dept. Store 3F Right
+ Twoson: Burglin Park Hippie
+ Twoson: Burglin Park Bakery Table
+ Twoson: Burglin Park Banana Table
+ Twoson: Burglin Park Tool Table
+ Happy-Happy: Self-Serve Stand
+ Happy-Happy: Drugstore Right
+ Happy-Happy: Drugstore Left
+ Threed: Arms Dealer
+ Threed: Drugstore Right
+ Threed: Drugstore Left
+ Threed: Bakery
+ Grapefruit Falls: Shop
+ 
+ Fourside: Junk Punk
+ Fourside: Bakery
+ Winters: Drugstore
+ 
+ Summers: Tourist Shop
+ Summers: Port Shop
+ Summers: Beach Cart
+ Summers: Street Cart
+ Summers: Restaurant
+ Dalaam: Restaurant
+ Scaraba: Store
+ Scaraba: Snake Shop
+ Scaraba: Seasoning Shop
+ Scaraba: Delicacy Shop
+ Scaraba: Tool Shop
+ Deep Darkness: Businessman
+ Deep Darkness: Arms Dealer
+ 
+ Magicant: Shop
